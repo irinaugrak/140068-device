@@ -5,18 +5,18 @@
     <title>Device</title>
   </head>
   <body>
-  <header class="main-header">
+  <header class="header">
     <a class="header-logo">Device</a>
     <div class="header-action">
       <div class="header-action__search">
         <input type="text" placeholder="Поиск по сайту">
         <button type="button">Найти</button>
       </div>
-      <ul class="header-action__user">
-        <li class="header-action__login-in"><a href="#">Войти</a></li>
-      </ul>
-      <p class="header-action__compare"><a href="#">Сравнить</a></p>
-      <p class="header-action__basket"><a href="#">Корзина</a></p>
+      <div class="header-action__user">
+        <span class="header-action__login-in"><a href="#">Войти</a></span>
+      </div>
+      <span class="header-action__compare"><a href="#">Сравнить</a></span>
+      <span class="header-action__basket"><a href="#">Корзина</a></span>
     </div>
     <nav class="header-navigation">
       <ul class="header-navigation__list">
@@ -37,7 +37,7 @@
     </nav>
   </header>
 
-  <main class="container">
+  <main class="main">
     <h1 class="visually-hidden">Интернет магазин гаджетов</h1>
 
     <section class="about">
@@ -58,20 +58,20 @@
       <div class="contacts__map">
         <img src="http://placehold.it/560x222" width="560" height="222" alt="Карта">
       </div>
-      <a class="btn-info" href="#">Напишите нам</a>
+      <button class="btn-info" type="button">Напишите нам</button>
     </section>
   </main>
 
-  <footer class="main-footer">
+  <footer class="footer">
     <a class="footer-logo">Device</a>
     <div class="footer-action">
-      <ul class="footer-action__user">
-        <li class="footer-action__login-in"><a href="#">Войти</a></li>
-      </ul>
-      <p class="footer-action__compare"><a href="#">Сравнить</a></p>
-      <p class="tooter-action__basket"><a href="#">Корзина</a></p>
+      <div class="footer-action__user">
+        <span class="footer-action__login-in"><a href="#">Войти</a></span>
+      </div>
+      <span class="footer-action__compare"><a href="#">Сравнить</a></span>
+      <span class="tooter-action__basket"><a href="#">Корзина</a></span>
     </div>
-    <p class="footer-address">г. Москва, ул. Строителей, 15</p>
+    <div class="footer-address">г. Москва, ул. Строителей, 15</div>
     <div class="footer-navigation">
       <ul class="footer-navigation__list">
         <li class="footer-navigation__delivery"><a href="#">Доставка</a></li>
@@ -79,7 +79,7 @@
         <li class="footer-navigation__contacts"><a href="#">Контакты</a></li>
       </ul>
     </div>
-    <p class="footer-phone">Тел.: <a href="tel: +74954959595">+7 (495) 495-95-95</a></p>
+    <span class="footer-phone">Тел.: <a href="tel:+74954959595">+7 (495) 495-95-95</a></span>
     <div class="footer-social">
       <ul>
         <li class="footer-social__btn"><a href="#">Вконтакте</a></li>
@@ -94,16 +94,16 @@
     </p>
   </footer>
 
-  <section class="modal modal-write">
+  <div class="modal modal-write">
     <h2 class="visually-hidden">Напишите нам</h2>
     <!-- Здесь будет форма -->
     <span class="modal-close">x</span>
-  </section>
+  </div>
 
-  <section class="modal modal-map">
+  <div class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
     <!-- Здесь будет карта -->
     <span class="modal-close">x</span>
-  </section>
+  </div>
   </body>
 </html>
