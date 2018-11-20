@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Device</title>
+  <meta charset="UTF-8">
+  <title>Device</title>
 </head>
 <body>
 <header class="header">
@@ -48,10 +48,16 @@
 
   <section class="filter">
     <h2 class="visually-hidden">Фильтр товаров</h2>
+    <div class="filter-bar">
+      <span class="filter-bar__title">Фильтр:</span>
+    </div>
     <form action="">
       <ul class="filter-list">
         <li class="filter-item">
           <h3 class="filter-item__title">Стоимость</h3>
+          <div class="filter-item__content">
+            <input type="range" min=0 value=5000 max=15000 name="price">
+          </div>
         </li>
         <li class="filter-item">
           <h3 class="filter-item__title">Цвет</h3>
@@ -77,6 +83,18 @@
 
   <section class="catalog">
     <h2 class="visually-hidden">Моноподы для селфи</h2>
+    <div class="catalog-bar">
+      <span class="catalog-bar__title">Сортировка:</span>
+      <ul class="catalog-bar__sort">
+        <li class="catalog-bar__sort_current">По цене</li>
+        <li>По типу</li>
+        <li>По популярности</li>
+      </ul>
+      <div class="catalog-bar__direction">
+        <span class="catalog-bar__direction_up catalog-bar__direction_current">up</span>
+        <span class="catalog-bar__direction_down">down</span>
+      </div>
+    </div>
     <ul class="catalog-list">
       <li class="catalog-item">
         <h3 class="catalog-item__title">
@@ -119,6 +137,15 @@
         <span class="catalog-item__new">NEW</span>
       </li>
     </ul>
+    <div class="pagination">
+      <span class="pagination-back">Назад</span>
+      <ul class="pagination-list">
+        <li class="pagination-item pagination-item_current"><a>1</a></li>
+        <li class="pagination-item"><a href="#">2</a></li>
+        <li class="pagination-item"><a href="#">3</a></li>
+      </ul>
+      <span class="pagination-next">Вперед</span>
+    </div>
   </section>
 </main>
 
