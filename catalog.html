@@ -8,10 +8,10 @@
 <header class="header">
   <a href="index.html" class="header-logo">Device</a>
   <div class="header-action">
-    <div class="header-action__search">
-      <input type="text" placeholder="Поиск по сайту">
-      <button type="button">Найти</button>
-    </div>
+    <form class="header-action__search" action="search.html" method="post">
+      <input type="text" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+      <button type="submit">Найти</button>
+    </form>
     <div class="header-action__user">
       <span class="header-action__login-link"><a href="#">Валентин Петухов</a></span>
       <span class="header-action__login-out"><a href="#">Выйти</a></span>
@@ -51,29 +51,29 @@
     <div class="filter-bar">
       <span class="filter-bar__title">Фильтр:</span>
     </div>
-    <form action="">
+    <form class="filter-form" action="filter.html" method="get">
       <ul class="filter-list">
         <li class="filter-item">
           <h3 class="filter-item__title">Стоимость</h3>
           <div class="filter-item__content">
-            <input type="range" min=0 value=5000 max=15000 name="price">
+            <input type="range" min=0 value=5000 max=15000 name="price" aria-label="Стоимость">
           </div>
         </li>
         <li class="filter-item">
           <h3 class="filter-item__title">Цвет</h3>
           <div class="filter-item__content">
-            <input type="checkbox" checked>Черный
-            <input type="checkbox">Белый
-            <input type="checkbox" checked>Синий
-            <input type="checkbox" checked>Красный
-            <input type="checkbox">Розовый
+            <input type="checkbox" name="black" checked aria-label="Черный">Черный
+            <input type="checkbox" name="white" aria-label="Белый">Белый
+            <input type="checkbox" name="blue" checked aria-label="Синий">Синий
+            <input type="checkbox" name="red" checked aria-label="Красный">Красный
+            <input type="checkbox" name="pink" aria-label="Розовый">Розовый
           </div>
         </li>
         <li class="filter-item">
           <h3 class="filter-item__title">Bluetooth</h3>
           <div class="filter-item__content">
-            <input name="bluetooth" type="radio" checked>Есть
-            <input name="bluetooth" type="radio">Нет
+            <input name="bluetooth" type="radio" checked aria-label="Есть">Есть
+            <input name="bluetooth" type="radio" aria-label="Нет">Нет
           </div>
         </li>
       </ul>

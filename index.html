@@ -5,14 +5,13 @@
   <title>Device</title>
 </head>
 <body>
-<!-- для дополнительного задания-->
 <header class="header">
   <a class="header-logo">Device</a>
   <div class="header-action">
-    <div class="header-action__search">
-      <input type="text" placeholder="Поиск по сайту">
-      <button type="button">Найти</button>
-    </div>
+    <form class="header-action__search" action="search.html" method="post">
+      <input type="text" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+      <button type="submit">Найти</button>
+    </form>
     <div class="header-action__user">
       <span class="header-action__login-in"><a href="#">Войти</a></span>
     </div>
@@ -44,7 +43,7 @@
   <section class="main-slider">
     <ul class="main-slider-list">
       <li class="main-slider-item main-slider-item_current">
-        <h2 class="main-slider-item__title section-title">Делай селфи, как Бен Стиллер!</h2>
+        <h2 class="main-slider-item__title section-title"><a href="catalog.html">Делай селфи, как Бен Стиллер!</a></h2>
         <p class="main-slider-item__text section-text">
           Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
         </p>
@@ -61,10 +60,10 @@
             <dd>Карбон</dd>
           </dl>
         </div>
-        <a class="main-slider-item__btn btn-info" href="#">Подробнее</a>
+        <a class="main-slider-item__btn btn-info" href="catalog.html">Подробнее</a>
       </li>
       <li class="main-slider-item">
-        <h2 class="main-slider-item__title section-title">Худеем правильно!</h2>
+        <h2 class="main-slider-item__title section-title"><a href="catalog.html">Худеем правильно!</a></h2>
         <p class="main-slider-item__text section-text">
           Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
         </p>
@@ -77,10 +76,10 @@
             <dd>48 часов</dd>
           </dl>
         </div>
-        <a class="main-slider-item__btn btn-info" href="#">Подробнее</a>
+        <a class="main-slider-item__btn btn-info" href="catalog.html">Подробнее</a>
       </li>
       <li class="main-slider-item">
-        <h2 class="main-slider-item__title section-title">Порхает как бабочка, жалит как пчела!</h2>
+        <h2 class="main-slider-item__title section-title"><a href="catalog.html">Порхает как бабочка, жалит как пчела!</a></h2>
         <p class="main-slider-item__text section-text">
           Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
         </p>
@@ -95,7 +94,7 @@
             <dd>50 м</dd>
           </dl>
         </div>
-        <a class="main-slider-item__btn btn-info" href="#">Подробнее</a>
+        <a class="main-slider-item__btn btn-info" href="catalog.html">Подробнее</a>
       </li>
     </ul>
     <ul class="main-slider-nav">
@@ -217,7 +216,7 @@
     <p class="section-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
       работоспособность покупки. Всякое бывает.</p>
     <div class="contacts__map">
-      <img src="img/map.jpg" width="560" height="222" alt="Карта">
+      <img src="img/map.jpg" width="560" height="222" alt="Офис компании по адресу: г. Москва, улица Строителей, 15">
     </div>
     <button class="btn-info" type="button">Напишите нам</button>
   </section>
@@ -257,14 +256,37 @@
 
 <div class="modal modal-write">
   <h2 class="visually-hidden">Напишите нам</h2>
-  <!-- Здесь будет форма -->
-  <span class="modal-close">x</span>
+  <form class="modal-write-form" action="write-us.html" method="post">
+    <p class="modal-write-item">
+      <label>
+        Ваше имя:
+        <input type="text" name="FIO" placeholder="Имя Фамилия">
+      </label>
+    </p>
+    <p class="modal-write-item">
+      <label>
+        Ваш e-mail:
+        <input type="email" name="email" placeholder="email@expample.com">
+      </label>
+    </p>
+    <p class="modal-write-item">
+      <label>
+        Текст письма:
+        <textarea placeholder="В свободной форме" name="text"></textarea>
+      </label>
+    </p>
+    <button class="modal-close" type="submit">Отправить</button>
+  </form>
 </div>
 
 <div class="modal modal-map">
   <h2 class="visually-hidden">Как до нас добраться</h2>
-  <!-- Здесь будет карта -->
-  <span class="modal-close">x</span>
+  <p>
+    <img src="img/map-big.jpg" width="960" height="559" alt="Офис компании по адресу: г. Москва, улица Строителей, 15">
+  </p>
+  <button class="modal-close" type="button">
+    Закрыть
+  </button>
 </div>
 </body>
 </html>
