@@ -165,7 +165,7 @@ a {
 .breadcrumbs-item {
   list-style: none;
 }
-.breadcrumbs-item,
+.breadcrumbs-current,
 .breadcrumbs-item a {
   font-size: 14px;
   line-height: 24px;
@@ -212,6 +212,42 @@ a {
   line-height: 24px;
   font-weight: 300;
   color: #464646;
+}
+.catalog-item__img {
+  position: relative;
+  width: 360px;
+  height: 380px;
+
+  background-color: #EEE;
+}
+.catalog-item__img-overlay:hover{
+  opacity: 0.7;
+}
+.catalog-item__img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 360px;
+  height: 380px;
+
+  opacity: 0;
+
+  background-color: #EEE;
+}
+
+.btn-compare {
+  font-size: 13px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.5);
+
+  background: none;
+  border: none;
+}
+.btn-compare:hover {
+  color: #000;
+}
+.btn-compare:active {
+  color: rgba(0, 0, 0, 0.2);
 }
 .footer {
   color: #FFF;
