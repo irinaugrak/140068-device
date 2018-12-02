@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Device</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,22 +16,22 @@
       <button type="submit">Найти</button>
     </form>
     <div class="header-action__user">
-      <span class="header-action__login-link"><a href="#">Валентин Петухов</a></span>
-      <span class="header-action__login-out"><a href="#">Выйти</a></span>
+      <span class="header-action-nav header-action__login-link"><a href="#">Валентин Петухов</a></span>
+      <span class="header-action-nav header-action__login-out"><a href="#">Выйти</a></span>
     </div>
-    <span class="header-action__compare"><a href="#">Сравнить</a></span>
-    <span class="header-action__basket"><a href="#">Корзина</a></span>
+    <span class="header-action-nav header-action__compare"><a href="#">Сравнить</a></span>
+    <span class="header-action-nav header-action__basket"><a href="#">Корзина</a></span>
   </div>
   <nav class="header-navigation">
     <ul class="header-navigation__list">
       <li class="header-navigation-item header-navigation__catalog"><a href="catalog.html">Каталог товаров</a>
         <ul class="header-navigation__catalog-list">
-          <li><a href="catalog.html">Виртуальная реальность</a></li>
-          <li><a href="catalog.html">Моноподы для селфи</a></li>
-          <li><a href="catalog.html">Экшн-камеры</a></li>
-          <li><a href="catalog.html">Фитнес-браслеты</a></li>
-          <li><a href="catalog.html">Умные часы</a></li>
-          <li><a href="catalog.html">Квадрокоптеры</a></li>
+          <li class="header-navigation__catalog-item"><a href="catalog.html">Виртуальная реальность</a></li>
+          <li class="header-navigation__catalog-item"><a href="catalog.html">Моноподы для селфи</a></li>
+          <li class="header-navigation__catalog-item"><a href="catalog.html">Экшн-камеры</a></li>
+          <li class="header-navigation__catalog-item"><a href="catalog.html">Фитнес-браслеты</a></li>
+          <li class="header-navigation__catalog-item"><a href="catalog.html">Умные часы</a></li>
+          <li class="header-navigation__catalog-item"><a href="catalog.html">Квадрокоптеры</a></li>
         </ul>
       </li>
       <li class="header-navigation-item header-navigation__delivery"><a href="#">Доставка</a></li>
@@ -43,9 +44,9 @@
 <main class="main">
   <h1 class="page-title">Моноподы для селфи</h1>
   <ul class="breadcrumbs">
-    <li><a href="index.html">Главная</a></li>
-    <li><a href="catalog.html">Каталог товаров</a></li>
-    <li>Моноподы для селфи</li>
+    <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
+    <li class="breadcrumbs-item"><a href="catalog.html">Каталог товаров</a></li>
+    <li class="breadcrumbs-item">Моноподы для селфи</li>
   </ul>
 
   <section class="filter">
@@ -64,18 +65,18 @@
         <li class="filter-item">
           <h3 class="filter-item__title">Цвет</h3>
           <div class="filter-item__content">
-            <input type="checkbox" name="black" checked aria-label="Черный">Черный
-            <input type="checkbox" name="white" aria-label="Белый">Белый
-            <input type="checkbox" name="blue" checked aria-label="Синий">Синий
-            <input type="checkbox" name="red" checked aria-label="Красный">Красный
-            <input type="checkbox" name="pink" aria-label="Розовый">Розовый
+            <input type="checkbox" name="black" checked aria-label="Черный"><span>Черный</span>
+            <input type="checkbox" name="white" aria-label="Белый"><span>Белый</span>
+            <input type="checkbox" name="blue" checked aria-label="Синий"><span>Синий</span>
+            <input type="checkbox" name="red" checked aria-label="Красный"><span>Красный</span>
+            <input type="checkbox" name="pink" aria-label="Розовый"><span>Розовый</span>
           </div>
         </li>
         <li class="filter-item">
           <h3 class="filter-item__title">Bluetooth</h3>
           <div class="filter-item__content">
-            <input name="bluetooth" type="radio" value="Y" checked aria-label="Есть">Есть
-            <input name="bluetooth" type="radio" value="N" aria-label="Нет">Нет
+            <input name="bluetooth" type="radio" value="Y" checked aria-label="Есть"><span>Есть</span>
+            <input name="bluetooth" type="radio" value="N" aria-label="Нет"><span>Нет</span>
           </div>
         </li>
       </ul>
@@ -156,20 +157,20 @@
     <a href="index.html" class="footer-logo">Device</a>
     <div class="footer-action">
       <div class="footer-action__user">
-        <span class="footer-action__login-link"><a href="#">Валентин Петухов</a></span>
-        <span class="footer-action__login-out"><a href="#">Выйти</a></span>
+        <span class="footer-action-nav footer-action__login-link"><a href="#">Валентин Петухов</a></span>
+        <span class="footer-action-nav footer-action__login-out"><a href="#">Выйти</a></span>
       </div>
-      <span class="footer-action__compare"><a href="#">Сравнить</a></span>
-      <span class="tooter-action__basket"><a href="#">Корзина</a></span>
+      <span class="footer-action-nav footer-action__compare"><a href="#">Сравнить</a></span>
+      <span class="footer-action-nav tooter-action__basket"><a href="#">Корзина</a></span>
     </div>
   </div>
   <div class="footer-middle">
     <div class="footer-address">г. Москва, ул. Строителей, 15</div>
     <div class="footer-navigation">
       <ul class="footer-navigation__list">
-        <li class="footer-navigation__delivery"><a href="#">Доставка</a></li>
-        <li class="footer-navigation__guarantee"><a href="#">Гарантия</a></li>
-        <li class="footer-navigation__contacts"><a href="#">Контакты</a></li>
+        <li class="footer-navigation-item footer-navigation__delivery"><a href="#">Доставка</a></li>
+        <li class="footer-navigation-item footer-navigation__guarantee"><a href="#">Гарантия</a></li>
+        <li class="footer-navigation-item footer-navigation__contacts"><a href="#">Контакты</a></li>
       </ul>
     </div>
     <span class="footer-phone">Тел.: <a href="tel:+74954959595">+7 (495) 495-95-95</a></span>
