@@ -10,6 +10,9 @@
   font-weight: 800;
   font-style: normal;
 }
+.modal {
+  display: none;
+}
 body {
   margin: 0;
   padding: 0;
@@ -266,7 +269,6 @@ input::-webkit-search-results-decoration { display: none; }
   opacity: 0;
   background-color: #EEE;
 }
-
 .btn-compare {
   font-size: 13px;
   line-height: 20px;
