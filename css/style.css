@@ -86,6 +86,7 @@ input[type="radio"].visually-hidden{
   border: none;
   text-align: center;
   box-sizing: border-box;
+  cursor: pointer;
 }
 .btn-info:hover {
   color: #000;
@@ -412,19 +413,20 @@ input::-webkit-search-results-decoration { display: none; }
   height: 25px;
   top: 0;
   left: 0;
-  background: url("../img/radio-off.svg") no-repeat;
+  background: url("../img/radio-off.svg") center center no-repeat;
   background-size: 50%;
+  cursor: pointer;
 }
 #product-1:checked ~ .slider-controls label[for="product-1"]:before {
-  background: url("../img/radio-on.svg") no-repeat;
+  background: url("../img/radio-on.svg") center center no-repeat;
   background-size: 50%;
 }
 #product-2:checked ~ .slider-controls label[for="product-2"]:before {
-  background: url("../img/radio-on.svg") no-repeat;
+  background: url("../img/radio-on.svg") center center no-repeat;
   background-size: 50%;
 }
 #product-3:checked ~ .slider-controls label[for="product-3"]:before {
-  background: url("../img/radio-on.svg") no-repeat;
+  background: url("../img/radio-on.svg") center center no-repeat;
   background-size: 50%;
 }
 #product-1:checked ~ .main-slider-list #slide1 {
@@ -567,6 +569,7 @@ input::-webkit-search-results-decoration { display: none; }
   justify-content: center;
   align-items: center;
   background-color: rgba(240, 197, 46, 0.5);
+  cursor: pointer;
 }
 .popular-item__img:hover {
   background-color: rgba(240, 197, 46, 1);
@@ -699,7 +702,7 @@ input::-webkit-search-results-decoration { display: none; }
   background-position: center center;
   border: none;
   min-width: 160px;
-
+  cursor: pointer;
 }
 .btn-slide:hover {
   color: #000;
@@ -709,6 +712,9 @@ input::-webkit-search-results-decoration { display: none; }
   color: #f7e184;
   background-color: #000;
   background-image: none;
+}
+.page-name {
+  margin-bottom: 50px;
 }
 .page-name-inner {
   padding-left: 60px;
@@ -735,7 +741,6 @@ input::-webkit-search-results-decoration { display: none; }
 }
 .breadcrumbs {
   margin: 0;
-  margin-bottom: 35px;
   padding: 0;
   display: flex;
   justify-content: flex-start;
@@ -998,6 +1003,10 @@ input::-webkit-search-results-decoration { display: none; }
   font-size: 14px;
   line-height: 40px;
 }
+.checkbox-text,
+.radio-text{
+  user-select: none;
+}
 .filter-item-checkbox input:disabled ~ .checkbox-text,
 .filter-item-radio input:disabled ~ .radio-text{
   color: #a6a6a6;
@@ -1211,6 +1220,7 @@ input::-webkit-search-results-decoration { display: none; }
   color: rgba(0, 0, 0, 0.5);
   background: none;
   border: none;
+  cursor: pointer;
 }
 .btn-compare:hover {
   color: #000;
