@@ -75,11 +75,12 @@
       </div>
       <ul class="main-slider-list">
         <li class="main-slider-item main-slider-item_current" id="slide1">
+
           <div class="main-slider-item__img">
             <img src="img/slider-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
           </div>
           <div class="main-slider-right">
-            <span class="main-slider-num">01</span>
+            <div class="main-slider-num">01</div>
             <div class="main-slider-right-top">
               <hr class="main-slider-line"></hr>
               <h2 class="main-slider-item__title"><a href="catalog.html">Делай селфи, как Бен Стиллер!</a></h2>
@@ -89,6 +90,7 @@
               </p>
             </div>
             <div class="main-slider-right-bottom">
+
               <a class="main-slider-item__btn btn-info" href="catalog.html">Подробнее</a>
               <table class="main-slider-item__features">
                 <tr>
@@ -305,12 +307,12 @@
           <h2 class="section-title">Контакты</h2>
           <p class="section-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
             работоспособность покупки. Всякое бывает.</p>
-          <div class="contacts__map">
+          <a class="contacts__map">
             <img src="img/map.jpg" width="560" height="222"
                  alt="Офис компании по адресу: г. Москва, улица Строителей, 15">
-          </div>
+          </a>
         </div>
-        <button class="btn-info" type="button">Напишите нам</button>
+        <button class="contacts-btn btn-info" type="button">Напишите нам</button>
       </section>
     </div>
   </div>
@@ -359,15 +361,16 @@
   <form class="modal-write-form" action="write-us.html" method="post">
     <p class="modal-write-item">
       <label for="modal-write-fio">Ваше имя:</label>
-      <input id="modal-write-fio" type="text" name="FIO" placeholder="Имя Фамилия">
+      <input class="modal-write-fio" id="modal-write-fio" type="text" name="fio" placeholder="Имя Фамилия">
     </p>
     <p class="modal-write-item">
       <label for="modal-write-email">Ваш e-mail:</label>
-      <input id="modal-write-email" type="email" name="email" placeholder="email@expample.com">
+      <input class="modal-write-email" id="modal-write-email" type="email" name="email"
+             placeholder="email@expample.com">
     </p>
     <p class="modal-write-item">
       <label for="modal-write-text">Текст письма:</label>
-      <textarea id="modal-write-text" placeholder="В свободной форме" name="text"></textarea>
+      <textarea class="modal-write-text" id="modal-write-text" placeholder="В свободной форме" name="text"></textarea>
     </p>
     <button class="btn-info" type="submit">Отправить</button>
     <button class="modal-close" type="button">Закрыть</button>
@@ -376,6 +379,8 @@
 
 <div class="modal modal-map">
   <h2 class="visually-hidden">Как до нас добраться</h2>
+  <iframe src="https://yandex.ru/map-widget/v1/-/CBFye-vHTC" width="960" height="559" frameborder="1"
+          allowfullscreen="true"></iframe>
   <p>
     <img src="img/map-big.jpg" width="960" height="559" alt="Офис компании по адресу: г. Москва, улица Строителей, 15">
   </p>

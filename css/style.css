@@ -10,6 +10,19 @@
   font-weight: 800;
   font-style: normal;
 }
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+@keyframes main-slider {
+  from {transform: translateX(-1160px)}
+  to {transform: translateX(0)}
+}
+@keyframes catalog-list {
+  from {transform: scaleY(0); transform-origin: top}
+  to {transform: scaleY(1); transform-origin: top}
+ }
+
 * {
   /*outline:1px solid red;*/
 }
@@ -53,7 +66,7 @@ input[type="radio"].visually-hidden{
 .page-title {
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   font-family: Gilroy, Arial, sans-serif;
   font-size: 47px;
   line-height: 48px;
@@ -97,13 +110,13 @@ input[type="radio"].visually-hidden{
   background-color: #f0c52e;
 }
 .header {
+  padding-top: 40px;
   margin-bottom: -110px;
 }
 .header.inner-page {
   margin-bottom: 40px;
 }
 .header-inner{
-  margin-top: 40px;
   padding: 0 60px;
   display: flex;
   flex-direction: column;
@@ -338,6 +351,7 @@ input::-webkit-search-results-decoration { display: none; }
   color: #000;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  user-select: none;
 }
 .header-navigation-item > a:hover {
   color: rgba(0, 0, 0, 0.6);
@@ -361,6 +375,8 @@ input::-webkit-search-results-decoration { display: none; }
 }
 .header-navigation__catalog-list.show {
   display: flex;
+  animation-name: catalog-list;
+  animation-duration: 0.2s;
 }
 .header-navigation__catalog-list-column ul{
   margin: 0;
@@ -398,6 +414,7 @@ input::-webkit-search-results-decoration { display: none; }
   position: absolute;
   bottom: 128px;
   right: 86px;
+  z-index: 1;
 }
 .slider-controls label {
   position: relative;
@@ -438,6 +455,18 @@ input::-webkit-search-results-decoration { display: none; }
 #product-3:checked ~ .main-slider-list #slide3 {
   display: flex;
 }
+#product-1.toggle:checked ~ .main-slider-list #slide1 {
+  animation-name: main-slider;
+  animation-duration: 0.6s;
+}
+#product-2.toggle:checked ~ .main-slider-list #slide2 {
+  animation-name: main-slider;
+  animation-duration: 0.6s;
+}
+#product-3.toggle:checked ~ .main-slider-list #slide3 {
+  animation-name: main-slider;
+  animation-duration: 0.6s;
+}
 
 .main-slider-list {
   margin: 0;
@@ -447,6 +476,7 @@ input::-webkit-search-results-decoration { display: none; }
 .main-slider-item {
   display: none;
   justify-content: space-between;
+
 }
 .main-slider-item__img {
   display: flex;
@@ -466,6 +496,7 @@ input::-webkit-search-results-decoration { display: none; }
   position: absolute;
   top: -12px;
   right: 66px;
+
   font-family: Gilroy, Arial, sans-serif;
   font-size: 179.2px;
   line-height: 179.2px;
@@ -479,6 +510,7 @@ input::-webkit-search-results-decoration { display: none; }
   justify-content: space-between;
   width: 500px;
   padding-right: 60px;
+  position: relative;
 }
 .main-slider-right-top {
   margin-top: 37px;
@@ -843,7 +875,7 @@ input::-webkit-search-results-decoration { display: none; }
   background-color: rgba(0, 0, 0, 0.08);
   padding-top: 70px;
 }
-.filter-btn {
+.filter .btn-info {
   min-width: 200px;
 }
 .range-controls {
@@ -1563,11 +1595,16 @@ input::-webkit-search-results-decoration { display: none; }
   padding-right: 100px;
   padding-top: 93px;
   padding-bottom: 80px;
-  top: 50px;
+  top: 30px;
   left: 50%;
   margin-left: -480px;
   background: #FFF;
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+}
+.modal-write.show {
+  display: block;
+  animation-name: zoom;
+  animation-duration: 0.6s;
 }
 .modal-close {
   font-size: 0;
@@ -1666,20 +1703,47 @@ input::-webkit-search-results-decoration { display: none; }
 .modal-write .btn-info {
   min-width: 200px;
 }
+.modal-write-item input.modal-error {
+  background-color: rgba(237, 181, 181, 0.5);
+}
 .modal-map {
   display: none;
-  width: 960;
-  height: 559;
+  width: 960px;
+  height: 559px;
   top: 50%;
   left: 50%;
   margin-top: -279px;
   margin-left: -480px;
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
 }
+.modal-map.show {
+  display: block;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
 .modal-map p {
   margin: 0;
   line-height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
+.modal-map iframe {
+  border: none;
+  position: relative;
+  z-index: 2;
+}
+.modal-map .modal-close {
+  z-index: 2;
+}
+.contacts__map {
+  display: block;
+  cursor: pointer;
+  line-height: 0;
+}
+
+
 
 
 
