@@ -11,7 +11,7 @@ let modalWriteForm = document.querySelector('.modal-write-form');
 let openMap = document.querySelector('.contacts__map');
 let modalMap = document.querySelector('.modal-map');
 let modalMapClose = document.querySelector('.modal-map .modal-close');
-let slider = document.querySelector('.main-slider');
+
 let isStorageSupport = true;
 let storageName = "";
 let storageEmail = "";
@@ -84,9 +84,13 @@ modalWriteForm.addEventListener('submit', function (e) {
   } else {
     if(!modalWriteFio.value) {
       modalWriteFio.classList.add('modal-error');
+    } else {
+      modalWriteFio.classList.remove('modal-error');
     }
     if(!modalWriteEmail.value) {
       modalWriteEmail.classList.add('modal-error');
+    } else {
+      modalWriteEmail.classList.remove('modal-error');
     }
     e.preventDefault();
   }
@@ -102,14 +106,7 @@ modalMapClose.addEventListener('click', function(e) {
   modalMap.classList.remove('show');
 })
 
-// Аннимация слайдера
-slider.addEventListener('click', function (e) {
-  if(e.target.nodeName === "INPUT") {
-    if(!e.target.classList.contains('toggle')) {
-      e.target.classList.add('toggle');
-    }
-  }
-})
+
 
 
 
