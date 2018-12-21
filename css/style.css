@@ -111,7 +111,7 @@ input[type="radio"].visually-hidden{
 }
 .header {
   padding-top: 40px;
-  margin-bottom: -110px;
+  margin-bottom: -167px;
 }
 .header.inner-page {
   margin-bottom: 40px;
@@ -405,14 +405,14 @@ input::-webkit-search-results-decoration { display: none; }
 }
 
 .main-slider {
-  margin-bottom: 105px;
+  margin-bottom: 40px;
 }
 .main-slider .container{
   position: relative;
 }
 .slider-controls {
   position: absolute;
-  bottom: 128px;
+  bottom: 225px;
   right: 86px;
   z-index: 1;
 }
@@ -494,8 +494,8 @@ input::-webkit-search-results-decoration { display: none; }
 }
 .main-slider-num {
   position: absolute;
-  top: -12px;
-  right: 66px;
+  top: 55px;
+  right: 45px;
 
   font-family: Gilroy, Arial, sans-serif;
   font-size: 179.2px;
@@ -509,11 +509,11 @@ input::-webkit-search-results-decoration { display: none; }
   flex-direction: column;
   justify-content: space-between;
   width: 500px;
+  padding-top: 105px;
   padding-right: 60px;
   position: relative;
 }
 .main-slider-right-top {
-  margin-top: 37px;
   z-index: 1;
 }
 .main-slider-item__title {
@@ -539,7 +539,7 @@ input::-webkit-search-results-decoration { display: none; }
   min-width: 220px;
 }
 .main-slider-item__features th {
-  padding-right: 60px;
+  min-width: 160px;
   font-size: 13px;
   line-height: 20px;
   font-weight: 300;
@@ -548,7 +548,7 @@ input::-webkit-search-results-decoration { display: none; }
   padding-right: 0;
 }
 .main-slider-item__features td {
-  padding-right: 60px;
+  min-width: 160px;
   font-family: Gilroy, Arial, sans-serif;
   font-size: 36px;
   line-height: 48px;
@@ -558,6 +558,9 @@ input::-webkit-search-results-decoration { display: none; }
 }
 .main-slider-item__features td:last-child {
   padding-right: 0;
+}
+.features-table {
+  min-height: 170px;
 }
 .popular {
   margin-bottom: 172px;
@@ -610,7 +613,7 @@ input::-webkit-search-results-decoration { display: none; }
   opacity: 0.3;
 }
 .partners {
-  margin-bottom: 100px;
+  margin-bottom: 75px;
 }
 .partners-list {
   margin: 0;
@@ -746,7 +749,7 @@ input::-webkit-search-results-decoration { display: none; }
   background-image: none;
 }
 .page-name {
-  margin-bottom: 50px;
+  margin-bottom: 44px;
 }
 .page-name-inner {
   padding-left: 60px;
@@ -879,7 +882,7 @@ input::-webkit-search-results-decoration { display: none; }
   min-width: 200px;
 }
 .range-controls {
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 .range-controls__scale {
   position: relative;
@@ -887,7 +890,7 @@ input::-webkit-search-results-decoration { display: none; }
   background-color: #dbdbdb;
 }
 .range-controls__bar {
-  width: 70%;
+  width: 55%;
   height: 2px;
   background-color: #91c92f;
 }
@@ -904,7 +907,7 @@ input::-webkit-search-results-decoration { display: none; }
   cursor: pointer;
 }
 .range-controls__toggle.toggle-max {
-  left: 70%;
+  left: 55%;
 }
 .catalog {
   width: 760px;
@@ -958,7 +961,7 @@ input::-webkit-search-results-decoration { display: none; }
   color: #000;
 }
 .range-controls__min-price {
-  margin-right: 100px;
+  margin-right: 60px;
 }
 .range-controls__min-price,
 .range-controls__max-price{
@@ -988,12 +991,12 @@ input::-webkit-search-results-decoration { display: none; }
 }
 .filter-item {
   border-top: 2px solid #000;
-  padding-top: 13px;
-  padding-bottom: 40px;
+  padding-top: 9px;
+  padding-bottom: 32px;
 }
 .filter-item__title {
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 20px;
   font-family: Gilroy, Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -1009,7 +1012,9 @@ input::-webkit-search-results-decoration { display: none; }
 .filter-item__content label {
   display: block;
 }
-
+.price-progress {
+  padding-top: 15px;
+}
 .filter-item-checkbox .checkbox-square {
   width: 33px;
   height: 33px;
@@ -1281,7 +1286,7 @@ input::-webkit-search-results-decoration { display: none; }
   margin: 0;
 }
 .about {
-  width: 475px;
+  width: 482px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1342,7 +1347,7 @@ input::-webkit-search-results-decoration { display: none; }
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 60px;
+  padding-bottom: 65px;
 }
 .footer-line {
   margin: 0;
@@ -1727,7 +1732,7 @@ input::-webkit-search-results-decoration { display: none; }
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 1;
 }
 .modal-map iframe {
   border: none;
