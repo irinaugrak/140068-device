@@ -11,10 +11,7 @@ let modalWriteForm = document.querySelector('.modal-write-form');
 let openMap = document.querySelector('.contacts__map');
 let modalMap = document.querySelector('.modal-map');
 let modalMapClose = document.querySelector('.modal-map .modal-close');
-
 let slider = document.querySelector('.main-slider');
-
-
 let isStorageSupport = true;
 let storageName = "";
 let storageEmail = "";
@@ -54,10 +51,12 @@ contactsBtn.addEventListener('click', function(e) {
   }
 })
 
+// Кнопка "Закрыть" в форме "Напишите нам"
 modalWriteCloseBtn.addEventListener('click', function (e) {
   modalWrite.classList.remove('show');
 })
 
+// Нажатие на клавишу ESC
 window.addEventListener('keydown', function(e) {
   if(modalWrite.classList.contains('show')) {
     if(e.keyCode === 27) {
@@ -73,6 +72,7 @@ window.addEventListener('keydown', function(e) {
   }
 })
 
+// Отправка формы "Напишите нам"
 modalWriteForm.addEventListener('submit', function (e) {
   if(modalWriteFio.value && modalWriteEmail.value) {
     if(isStorageSupport) {
