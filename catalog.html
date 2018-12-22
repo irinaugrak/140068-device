@@ -5,7 +5,7 @@
   <title>Device</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-pref.css">
 </head>
 <body>
 <header class="header inner-page">
@@ -31,7 +31,7 @@
         <ul class="header-navigation-list">
           <li class="header-navigation-item header-navigation__catalog">
             <a href="catalog.html">Каталог товаров</a>
-            <span class="header-navigation-plus"></span>
+            <button class="header-navigation-plus"></button>
             <ul class="header-navigation__catalog-list">
               <li class="header-navigation__catalog-list-column">
                 <ul>
@@ -109,6 +109,8 @@
               <div class="filter-item__content price-progress">
                 <div class="range-controls">
                   <div class="range-controls__scale">
+                    <input class="range-controls__min visually-hidden" type="range">
+                    <input class="range-controls__max visually-hidden" type="range">
                     <div class="range-controls__bar"></div>
                     <div class="range-controls__toggle toggle-min"></div>
                     <div class="range-controls__toggle toggle-max"></div>
