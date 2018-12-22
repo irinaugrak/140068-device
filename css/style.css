@@ -218,14 +218,15 @@ input::-webkit-search-results-button,
 input::-webkit-search-results-decoration { display: none; }
 
 .header-action__search input {
-  width: 357px;
+  box-sizing: border-box;
+  height: 45px;
+  width: 328px;
   border: none;
   background-color: transparent;
   cursor: pointer;
+  padding: 0;
   margin-left: -36px;
   padding-left: 39px;
-  padding-bottom: 7px;
-
 }
 .header-action__search-icon {
   position: relative;
@@ -472,7 +473,7 @@ input::-webkit-search-results-decoration { display: none; }
 .slider-controls label:before {
   content: "";
   position: absolute;
-  width: 25px;
+  width: 26px;
   height: 25px;
   top: 0;
   left: 0;
@@ -551,6 +552,7 @@ input::-webkit-search-results-decoration { display: none; }
   width: 100px;
   height: 7px;
   border: none;
+  text-align: left;
   background: #FFF;
 }
 .main-slider-num {

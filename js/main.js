@@ -16,10 +16,10 @@ let isStorageSupport = true;
 let storageName = "";
 let storageEmail = "";
 
-try {
+try{
   storageName = localStorage.getItem("fio");
   storageEmail = localStorage.getItem("email");
-}catch {
+}catch(err) {
   isStorageSupport = false;
 }
 
