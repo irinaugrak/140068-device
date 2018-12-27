@@ -13,12 +13,12 @@ let modalMap = document.querySelector('.modal-map');
 let modalMapClose = document.querySelector('.modal-map .modal-close');
 
 let isStorageSupport = true;
-let storageName = "";
-let storageEmail = "";
+let storageName = '';
+let storageEmail = '';
 
 try{
-  storageName = localStorage.getItem("fio");
-  storageEmail = localStorage.getItem("email");
+  storageName = localStorage.getItem('fio');
+  storageEmail = localStorage.getItem('email');
 }catch(err) {
   isStorageSupport = false;
 }
