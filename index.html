@@ -5,7 +5,7 @@
   <title>Device</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/min.style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="header">
@@ -30,7 +30,6 @@
         <ul class="header-navigation-list">
           <li class="header-navigation-item header-navigation__catalog">
             <a href="catalog.html">Каталог товаров</a>
-            <button class="header-navigation-plus"></button>
             <ul class="header-navigation__catalog-list">
               <li class="header-navigation__catalog-list-column">
                 <ul>
@@ -74,14 +73,14 @@
         <label for="product-3"></label>
       </div>
       <ul class="main-slider-list">
-        <li class="main-slider-item slide1 main-slider-item_current" id="slide1">
+        <li class="main-slider-item slide1" id="slide1">
           <div class="main-slider-item__img">
             <img src="img/slider-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
           </div>
           <div class="main-slider-right">
             <div class="main-slider-num">01</div>
             <div class="main-slider-right-top">
-              <h2 class="main-slider-item__title"><a href="catalog.html">Делай селфи, как Бен Стиллер!</a></h2>
+              <h2 class="main-slider-item__title"><a href="catalog.html">Делай селфи, <br> как Бен Стиллер!</a></h2>
               <p class="main-slider-item__text">
                 Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом
                 всего 5 килограмм.
@@ -113,7 +112,7 @@
           <div class="main-slider-right">
             <span class="main-slider-num">02</span>
             <div class="main-slider-right-top">
-              <h2 class="main-slider-item__title"><a href="catalog.html">Худеем правильно!</a></h2>
+              <h2 class="main-slider-item__title"><a href="catalog.html">Худеем <br> правильно!</a></h2>
               <p class="main-slider-item__text">
                 Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
               </p>
@@ -187,7 +186,7 @@
             <a href="catalog.html">Моноподы для селфи</a>
           </h3>
           <a href="catalog.html">
-            <div class="popular-item__img">
+            <div class="popular-item__img popular-item__img-bottom">
               <img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
             </div>
           </a>
@@ -244,13 +243,13 @@
       <input class="service-3 service-radio visually-hidden" type="radio" id="service-3" name="service">
       <ul class="services-nav">
         <li class="services-page services-page-1" id="services-page-1">
-          <label class="btn-slide" for="service-1">Доставка</label>
+          <label class="btn-slide btn-slide-services" for="service-1">Доставка</label>
         </li>
         <li class="services-page services-page-2" id="services-page-2">
-          <label class="btn-slide" for="service-2">Гарантия</label>
+          <label class="btn-slide btn-slide-services" for="service-2">Гарантия</label>
         </li>
         <li class="services-page services-page-3" id="services-page-3">
-          <label class="btn-slide" for="service-3">Кредит</label>
+          <label class="btn-slide btn-slide-services" for="service-3">Кредит</label>
         </li>
       </ul>
       <ul class="services-list">
