@@ -1,6 +1,5 @@
 'use strict';
 
-let openCatalogBtn = document.querySelector('.header-navigation-plus');
 let contactsBtn = document.querySelector('.contacts-btn');
 let modalWrite  = document.querySelector('.modal-write');
 let modalWriteCloseBtn = document.querySelector('.modal-write .modal-close');
@@ -22,13 +21,6 @@ try{
 }catch(err) {
   isStorageSupport = false;
 }
-
-// Всплывающий список категорий в хедере
-openCatalogBtn.addEventListener('click', function(e) {
-  let catalogList = document.querySelector('.header-navigation__catalog-list');
-  e.preventDefault();
-  catalogList.classList.toggle('show');
-})
 
 // Обработчик клика на кнопку "Напишите нам"
 contactsBtn.addEventListener('click', function(e) {
@@ -54,6 +46,7 @@ contactsBtn.addEventListener('click', function(e) {
 // Кнопка "Закрыть" в форме "Напишите нам"
 modalWriteCloseBtn.addEventListener('click', function (e) {
   modalWrite.classList.remove('show');
+  modalWrite.classList.remove('form-error');
 })
 
 // Нажатие на клавишу ESC
@@ -62,6 +55,7 @@ window.addEventListener('keydown', function(e) {
     if(e.keyCode === 27) {
       e.preventDefault();
       modalWrite.classList.remove('show');
+      modalWrite.classList.remove('form-error');
     }
   }
   if(modalMap.classList.contains('show')) {
@@ -81,7 +75,14 @@ modalWriteForm.addEventListener('submit', function (e) {
       modalWriteFio.classList.remove('modal-error');
       modalWriteEmail.classList.remove('modal-error');
     }
+    modalWrite.classList.remove('form-error');
   } else {
+    modalWrite.classList.remove('form-error');
+    void modalWrite.offsetWidth;
+    modalWrite.classList.add('form-error');
+
+    e.preventDefault();
+
     if(!modalWriteFio.value) {
       modalWriteFio.classList.add('modal-error');
     } else {
@@ -92,7 +93,7 @@ modalWriteForm.addEventListener('submit', function (e) {
     } else {
       modalWriteEmail.classList.remove('modal-error');
     }
-    e.preventDefault();
+
   }
 })
 
