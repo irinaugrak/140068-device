@@ -1171,6 +1171,7 @@ input::-webkit-search-results-decoration { display: none; }
   padding-right: 70px;
   padding-top: 70px;
   background-color: rgba(0, 0, 0, 0.08);
+  z-index: 0;
 }
 .filter .btn-info {
   min-width: 200px;
